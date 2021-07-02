@@ -11,6 +11,16 @@ body
     margin: auto;
 }
 
+.img_title, .show_more
+{
+    font-weight: 700;
+}
+
+h1, h2
+{
+    font-weight: bolder;
+}
+
 /* Header */
 header
 {
@@ -22,6 +32,7 @@ header
 .logo
 {
     display: flex;
+    margin-left: 0%;
 }
 
 .logo img
@@ -50,7 +61,7 @@ nav li
 
 nav a
 {
-    font-size: 1.3em;
+    font-size: 1em;
     color: black;
     text-decoration: none;
 }
@@ -65,4 +76,72 @@ nav a:hover
 {
     color: #0065FC;
     border-top: 3px solid #0065FC;
+}
+
+/*Section index_page*/
+.index_page h1
+{
+    font-size: 1.3em;
+}
+
+.index_page p
+{
+    font-size: 1em;
+}
+
+.index_page h2
+{
+    font-size: 1.2em;
+}
+
+.fa-info-circle
+{
+    color: #0065FC;
+}
+
+/*Section index_page Barre de recherche*/
+.search 
+{
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+  
+.searchTerm 
+{
+    width: 10%;
+    border: 2px solid #F2F2F2;
+    border-right: none;
+    padding: 5px;
+    height: 34px;
+    outline: none;
+    font-weight: bold;
+}
+  
+.geoLoca 
+{
+    width: 40px;
+    height: 34px;
+    background: #F2F2F2;
+    text-align: center;
+    border-radius: 10px 0px 0px 10px;
+    font-size: 20px;
+}
+  
+.searchButton 
+{
+    width: 150px;
+    height: 34px;
+    border: none;
+    background: #0065FC;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    font-size: 15px;
+}
+  
+.fa-map-marker-alt
+{
+    margin-top: 20%;
 }
