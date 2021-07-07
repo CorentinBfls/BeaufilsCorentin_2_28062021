@@ -269,7 +269,7 @@ figcaption
 
 .hebergements:nth-child(1)
 {
-    flex: 2;
+    flex: 3;
 }
 
 .populaires:nth-child(2)
@@ -316,10 +316,63 @@ figcaption
 
 .hebergements figure
 {
-    box-shadow: 2px 2px 10px grey;
+    box-shadow: 1px 1px 10px gray;
     height: 175px;
     width: 200px;
     background-color: white;
     padding: 5px;
     border-radius: 20px;
+}
+
+/*Section Les plus populaires*/
+.populaires
+{
+    height: 600px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    margin-left: 25px;
+}
+
+.title_populaires
+{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 15%;
+    margin-left: 50px;
+}
+
+.fa-chart-line
+{
+    height: 40px;
+    width: 50px;
+
+}
+
+.result_populaires
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.populaires figure
+{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 1px 1px 10px grey;
+    height: 120px;
+    width: 300px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.populaires img
+{
+    height: 100%;
+    width: 40%;
+    border-radius: 20px 0px 0px 20px;
+    padding-right: 20px;
 }
