@@ -239,6 +239,17 @@ nav a:hover
     padding: 8px 7px;
 }
 
+.buttonFilter:hover
+{
+    background-color: #DEEBFF;
+    cursor: pointer;
+}
+
+.buttonÉconomique:hover, .buttonFamilial:hover, .buttonRomantique:hover, .buttonAnimaux:hover
+{
+    background-color: #DEEBFF;
+}
+
 /*Div double_section*/
 .double_section
 {
@@ -375,4 +386,59 @@ figcaption
     width: 40%;
     border-radius: 20px 0px 0px 20px;
     padding-right: 20px;
+}
+
+/*Section activites*/
+.activites
+{
+    padding-top: 40px;
+}
+
+.activites a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.result_activites figcaption
+{
+    display: flex;
+    justify-content: center;
+}
+
+.result_activites
+{
+    display: flex;
+}
+
+.activites figure
+{
+    box-shadow: 1px 1px 10px gray;
+    height: 400px;
+    width: 300px;
+    background-color: white;
+    padding-bottom: 40px;
+    border-radius: 20px;
+}
+
+.activites img
+{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.double_activites figure
+{
+    height: 172px;
+}
+
+.fort figure
+{
+    height: 220px;
+}
+
+.iles figure
+{
+    height: 125px;
 }
