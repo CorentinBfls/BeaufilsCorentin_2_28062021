@@ -5,6 +5,12 @@ body
     color: black;
 }
 
+.bloc_page
+{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
 .img_title, .show_more
 {
     font-weight: 700;
@@ -21,8 +27,6 @@ header
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 5%;
-    margin-right: 5%;
 }
 
 .logo
@@ -72,12 +76,6 @@ nav a:hover
 }
 
 /*Section bloc_search*/
-.bloc_search
-{
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
 .bloc_search h1
 {
     font-size: 1.3em;
@@ -275,8 +273,6 @@ input:hover
 {
     display: flex;
     justify-content: space-between;
-    margin-left: 5%;
-    margin-right: 5%;
 }
 
 .double_section a
@@ -445,8 +441,6 @@ figcaption
 {
     padding-top: 40px;
     padding-bottom: 40px;
-    margin-left: 5%;
-    margin-right: 5%;
 }
 
 .result_activites figcaption
@@ -467,7 +461,6 @@ figcaption
     color: black;
     height: 500px;
     width: 400px;
-
     margin-right: 50px;
 }
 
@@ -533,4 +526,67 @@ footer ul
 footer li
 {
     padding-bottom: 10px;
+}
+
+/*Version mobile*/
+@media all and (max-width: 576px)
+{
+    .bloc_page 
+    {
+        margin: 0px;
+        width: auto;
+    }
+
+    /*Header - Nav*/
+    header
+    {
+		width: 100%;
+	}
+
+	nav ul
+    {
+		width: 100%;
+		flex-direction: row;
+	}
+
+	nav li:nth-child(1)
+    {
+		order: 3;
+		border-bottom: 2px solid #F2F2F2;
+	}
+
+	nav li:nth-child(2)
+    {
+		order: 4;
+		border-bottom: 2px solid #F2F2F2;
+	}
+
+	nav a:hover
+    {
+		border-top: none;
+		border-bottom: 3px solid #0065FC;
+	}
+
+    .filter
+    {
+        flex-wrap: wrap;
+    }
+
+    /*Div double_section*/
+    .double_section
+    {
+        flex-direction: column-reverse;
+    }
+
+    /*Section activites*/
+    .result_activites
+    {
+        flex-direction: column;
+    }
+
+    /*Footer*/
+    footer
+    {
+        flex-direction: column;
+    }
 }
