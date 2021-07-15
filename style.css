@@ -423,9 +423,8 @@ figcaption
 .populaires img
 {
     height: 100%;
-    width: 40%;
+    width: 45%;
     border-radius: 20px 0px 0px 20px;
-    padding-right: 20px;
     object-fit: cover;
 }
 
@@ -434,6 +433,7 @@ figcaption
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-left: 25px;
 }
 
 /*Section activites*/
@@ -578,10 +578,71 @@ footer li
         flex-direction: column-reverse;
     }
 
+    /*Section Les plus populaires*/
+    .populaires
+    {
+        width: 100%;
+        border-radius: 0px;
+        margin-left: 0;
+        margin-bottom: 25px;
+        padding-bottom: 50px;
+    }
+
+    .populaires a
+    {
+        height: 140px;
+        width: 340px;
+        margin: 15px;
+    }
+
+    /*Section hebergements*/
+    .hebergements
+    {
+        background-color: white;
+        border-radius: 0px;
+        width: 100%;
+    }
+
+    .hebergements a
+    {
+        height: 195px;
+        width: 340px;
+        margin: 15px;
+    }
+
     /*Section activites*/
+    .activites
+    {
+        width: 100%;
+        padding-left: 10%;
+    }
+
     .result_activites
     {
         flex-direction: column;
+    }
+
+    .activites a
+    {
+        height: 150px;
+        width: 375px;
+        margin-bottom: 60px;
+    }
+
+    .double_activites figure
+    {
+        height: 150px;
+        width: 375px;
+    }
+
+    .fort figure
+    {
+        height: 150px;
+    }
+
+    .iles figure
+    {
+        height: 150px;
     }
 
     /*Footer*/
