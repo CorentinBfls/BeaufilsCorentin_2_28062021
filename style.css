@@ -21,6 +21,11 @@ h1, h2
     font-weight: bolder;
 }
 
+.price
+{
+    font-weight: 900;
+}
+
 /* Header */
 header 
 {
@@ -70,6 +75,7 @@ nav a
 
 .register
 {
+    margin-top: -8px;
     text-decoration: none;
     font-weight: bold;
     color: #0065FC;
@@ -503,6 +509,7 @@ figcaption
 {
     height: 220px;
     width: 400px;
+    margin-bottom: 1px;
 }
 
 .fort figure
@@ -825,12 +832,14 @@ footer li
     .result_activites
     {
         flex-direction: column;
+        align-items: center;
     }
 
     .activites a
     {
         height: 250px;
         width: 500px;
+        margin-right: 0;
         margin-bottom: 60px;
     }
 
@@ -838,11 +847,13 @@ footer li
     {
         height: 250px;
         width: 500px;
+        margin-bottom: 20px;
     }
 
     .fort figure
     {
         height: 250px;
+        margin-right: 0;
     }
 
     .iles figure
@@ -855,5 +866,185 @@ footer li
     {
         flex-wrap: wrap;
         padding-right: 50px;
+    }
+}
+
+/*Version intermédiaire*/
+@media (min-width: 768px) and (max-width: 1160px)
+{
+    .bloc_page
+    {
+        margin: 0px;
+        width: auto;
+    }
+
+    /*Section bloc_search*/
+    .filterButton div
+    {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+
+    /*Div double_section*/
+    .double_section
+    {
+        flex-direction: column-reverse;
+    }
+
+    /*Section Les plus populaires*/
+    .populaires
+    {
+        width: 100%;
+        border-radius: 0px;
+        margin-left: 0;
+        margin-bottom: 25px;
+        padding-bottom: 100px;
+    }
+
+    .populaires a
+    {
+        height: 200px;
+        width: 600px;
+        margin: 15px;
+    }
+
+    .populaires figcaption
+    {
+        justify-content: space-around;
+        margin-right: 90px;
+        margin-left: 80px;
+    }
+
+    /*Section hebergements*/
+    .hebergements
+    {
+        background-color: white;
+        border-radius: 0px;
+        width: 100%;
+    }
+
+    .hebergements a
+    {
+        height: 380px;
+        width: 600px;
+        margin: 15px;
+    }
+
+    .hebergements img
+    {
+        height: 300px;
+    }
+
+    /*Section activites*/
+    .activites
+    {
+        width: 100%;
+        padding-left: 5%;
+    }
+
+    .result_activites
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .activites a
+    {
+        height: 250px;
+        width: 600px;
+        margin-right: 0;
+        margin-bottom: 60px;
+    }
+
+    .double_activites figure
+    {
+        height: 250px;
+        width: 600px;
+        margin-bottom: 20px;
+    }
+
+    .fort figure
+    {
+        height: 250px;
+        margin-right: 0;
+    }
+
+    .iles figure
+    {
+        height: 250px;
+    }
+
+    /*Footer*/
+    footer ul
+    {
+        flex-wrap: wrap;
+        padding-right: 100px;
+    }
+}
+
+/*Deuxieme version intermédiaire*/
+@media (min-width: 1161px) and (max-width: 1515px)
+{
+    .bloc_page 
+    {
+        margin: 0px;
+        width: auto;
+    }
+
+    /*Section hebergements*/
+    .hebergements
+    {
+        width: 100%;
+    }
+    
+    .hebergements a
+    {
+        height: 250px;
+        width: 200px;
+        margin: 15px;
+    }
+    
+    .hebergements img
+    {
+        height: 180px;
+    }
+
+    /*Section activites*/
+    .activites
+    {
+        width: 100%;
+        padding-left: 5%;
+    }
+
+    .result_activites
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .activites a
+    {
+        height: 250px;
+        width: 800px;
+        margin-right: 0;
+        margin-bottom: 60px;
+    }
+
+    .double_activites figure
+    {
+        height: 250px;
+        width: 800px;
+        margin-bottom: 18px;
+    }
+
+    .fort figure
+    {
+        height: 250px;
+        margin-right: 0;
+    }
+
+    .iles figure
+    {
+        height: 250px;
     }
 }
