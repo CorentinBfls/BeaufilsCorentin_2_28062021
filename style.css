@@ -114,7 +114,6 @@ nav a
 
 .search 
 {
-    width: 100%;
     position: relative;
     display: flex;
 }
@@ -556,7 +555,7 @@ footer li
 {
     .bloc_page 
     {
-        margin: 0;
+        margin: 0 auto;
         width: auto;
     }
 
@@ -701,19 +700,22 @@ footer li
     /*Section activites*/
     .activites
     {
-        width: 100%;
-        padding-left: 10%;
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
     .result_activites
     {
         flex-direction: column;
+        align-items: center;
     }
 
     .activites a
     {
         height: 150px;
         width: 375px;
+        margin-right: 0;
         margin-bottom: 60px;
     }
 
@@ -726,6 +728,7 @@ footer li
     .fort figure
     {
         height: 150px;
+        margin-right: 0;
     }
 
     .iles figure
@@ -825,8 +828,9 @@ footer li
     /*Section activites*/
     .activites
     {
-        width: 100%;
+        width: 90%;
         padding-left: 5%;
+        padding-right: 5%;
     }
 
     .result_activites
@@ -847,7 +851,6 @@ footer li
     {
         height: 250px;
         width: 500px;
-        margin-bottom: 20px;
     }
 
     .fort figure
@@ -925,21 +928,22 @@ footer li
 
     .hebergements a
     {
-        height: 380px;
+        height: 330px;
         width: 600px;
         margin: 15px;
     }
 
     .hebergements img
     {
-        height: 300px;
+        height: 260px;
     }
 
     /*Section activites*/
     .activites
     {
-        width: 100%;
+        width: 90%;
         padding-left: 5%;
+        padding-right: 5%;
     }
 
     .result_activites
@@ -960,7 +964,6 @@ footer li
     {
         height: 250px;
         width: 600px;
-        margin-bottom: 20px;
     }
 
     .fort figure
@@ -985,9 +988,9 @@ footer li
 /*Deuxieme version intermédiaire*/
 @media (min-width: 1161px) and (max-width: 1515px)
 {
-    .bloc_page 
+    .bloc_page
     {
-        margin: 0px;
+        margin: 0;
         width: auto;
     }
 
@@ -1012,8 +1015,9 @@ footer li
     /*Section activites*/
     .activites
     {
-        width: 100%;
+        width: 90%;
         padding-left: 5%;
+        padding-right: 5%;
     }
 
     .result_activites
@@ -1034,7 +1038,6 @@ footer li
     {
         height: 250px;
         width: 800px;
-        margin-bottom: 18px;
     }
 
     .fort figure
