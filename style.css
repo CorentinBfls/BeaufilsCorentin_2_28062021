@@ -50,7 +50,6 @@ nav, .nav
 {
     display: flex;
     flex-direction: row-reverse;
-    align-items: center;
 }
 
 nav a
@@ -79,6 +78,7 @@ nav a
     text-decoration: none;
     font-weight: bold;
     color: #0065FC;
+    padding: 42px 0px 10px 0px;
 }
 
 /*Section bloc_search*/
@@ -97,14 +97,7 @@ nav a
     font-size: 1.2em;
 }
 
-.fa-info
-{
 
-    color: #0065FC;
-    border: 2px solid #F2F2F2;
-    border-radius: 25px;
-    padding: 4px 8px;
-}
 
 /*Section bloc_search Barre de recherche*/
 .icon_search
@@ -260,25 +253,7 @@ nav a
     padding: 8px 7px;
 }
 
-.buttonEconomique:hover
-{
-    cursor: pointer;
-    background-color: #DEEBFF;
-}
-
-.buttonFamilial:hover
-{
-    cursor: pointer;
-    background-color: #DEEBFF;
-}
-
-.buttonRomantique:hover
-{
-    cursor: pointer;
-    background-color: #DEEBFF;
-}
-
-.buttonAnimaux:hover
+.buttonEconomique:hover, .buttonFamilial:hover, .buttonRomantique:hover, .buttonAnimaux:hover
 {
     cursor: pointer;
     background-color: #DEEBFF;
@@ -289,6 +264,22 @@ input:hover
     cursor: pointer;
 }
 
+.info
+{
+    display: flex;
+    align-items: flex-end;
+}
+
+.fa-info
+{
+    color: #0065FC;
+    border: 2px solid #F2F2F2;
+    border-radius: 50px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 5px 10px;
+}
 /*Div double_section*/
 .double_section
 {
@@ -444,7 +435,8 @@ figcaption
 .populaires img
 {
     height: 100%;
-    width: 45%;
+    width: 100%;
+    max-width: 125px;
     border-radius: 20px 0px 0px 20px;
     object-fit: cover;
 }
@@ -453,7 +445,7 @@ figcaption
 {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-left: 25px;
 }
 
@@ -466,8 +458,8 @@ figcaption
 
 .result_activites figcaption
 {
-    display: flex;
-    justify-content: center;
+    margin-top: 5px;
+    margin-left: 20px;
 }
 
 .result_activites
@@ -508,7 +500,6 @@ figcaption
 {
     height: 220px;
     width: 400px;
-    margin-bottom: 1px;
 }
 
 .fort figure
@@ -559,11 +550,19 @@ footer li
         width: auto;
     }
 
+    body
+    {
+        max-width: 100%;
+        margin:0;
+    }
+
     /*Header - Nav*/
     header nav ul
     {
-    display:flex;
-    flex-wrap: wrap;
+        display:flex;
+        flex-wrap: wrap;
+        margin-left: 0;
+        margin-right: 0;
     }
     
     .nav
@@ -574,9 +573,9 @@ footer li
 
     .ancre
     {
-        justify-content: space-around;
         width: 100%;
         margin-bottom: 20px;
+        padding-top: 15px;
     }
 
     .ancre a
@@ -600,22 +599,38 @@ footer li
 
     .register
     {
-        width: 100%;
         display: flex;
         flex-direction: row-reverse;
-        padding: 25px 0px 10px 0px;
-        margin-right: 30px;
+        padding: 35px 25px 10px 0px;
     }
 
     nav a
     {
-        padding: 20px 10px 20px 5px;
+        padding: 25px 10px 20px 5px;
     }
 
     /*Section bloc_search*/
+    .bloc_search h1, h2, p
+    {
+        margin-left: 10px;
+    }
+
     .searchButton
     {
         display:none
+    }
+
+    .search
+    {
+        padding-left: 15px;
+    }
+
+    .searchTerm
+    {
+        width: 250px;
+        height: 45px;
+        padding: 5px;
+        font-size: 1em;
     }
 
     .icon_search
@@ -629,8 +644,20 @@ footer li
     .fa-search
     {
         color: white;
-        margin-top: 20%;
+        margin-top: 30%;
         margin-left: 30%;
+    }
+
+    .geoLoca
+    {
+        width: 40px;
+        height: 45px;
+        font-size: 17px;
+    }
+
+    .fa-map-marker-alt
+    {
+        margin-top: 35%;
     }
 
     .icon_search:hover
@@ -640,6 +667,7 @@ footer li
 
     .filter
     {
+        width: 70%;
         flex-wrap: wrap;
     }
 
@@ -651,12 +679,19 @@ footer li
 
     .filterButton div
     {
-        margin-left: 0;
+        margin-left: 11px;
     }
 
     .filter div
     {
         margin-bottom: 10px;
+    }
+
+    .fa-info
+    {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        margin-left: 10px;
     }
 
     /*Div double_section*/
@@ -666,6 +701,10 @@ footer li
     }
 
     /*Section Les plus populaires*/
+    .title_populaires
+    {
+        margin-left: 30px;
+    }
     .populaires
     {
         width: 100%;
@@ -678,11 +717,16 @@ footer li
     .populaires a
     {
         height: 140px;
-        width: 340px;
+        width: 300px;
         margin: 15px;
+        padding-right: 10px;
     }
 
     /*Section hebergements*/
+    #hebergements
+    {
+        margin-left: 25px;
+    }
     .hebergements
     {
         background-color: white;
@@ -693,8 +737,9 @@ footer li
     .hebergements a
     {
         height: 195px;
-        width: 340px;
+        width: 300px;
         margin: 15px;
+        padding-right: 10px;
     }
 
     /*Section activites*/
@@ -703,6 +748,11 @@ footer li
         width: 90%;
         padding-left: 5%;
         padding-right: 5%;
+    }
+
+    .activites figure
+    {
+        margin-bottom: 20px;
     }
 
     .result_activites
@@ -714,7 +764,7 @@ footer li
     .activites a
     {
         height: 150px;
-        width: 375px;
+        width: 335px;
         margin-right: 0;
         margin-bottom: 60px;
     }
@@ -722,7 +772,7 @@ footer li
     .double_activites figure
     {
         height: 150px;
-        width: 375px;
+        width: 335px;
     }
 
     .fort figure
@@ -796,6 +846,11 @@ footer li
         padding-bottom: 100px;
     }
 
+    .populaires img
+    {
+        max-width: 200px;
+    }
+
     .populaires a
     {
         height: 200px;
@@ -807,7 +862,7 @@ footer li
     {
         justify-content: space-around;
         margin-right: 90px;
-        margin-left: 25px;
+        margin-left: 45px;
     }
 
     /*Section hebergements*/
@@ -831,6 +886,11 @@ footer li
         width: 90%;
         padding-left: 5%;
         padding-right: 5%;
+    }
+
+    .activites figure
+    {
+        margin-bottom: 20px;
     }
 
     .result_activites
@@ -904,6 +964,11 @@ footer li
         padding-bottom: 100px;
     }
 
+    .populaires img
+    {
+        max-width: 300px;
+    }
+
     .populaires a
     {
         height: 200px;
@@ -915,7 +980,7 @@ footer li
     {
         justify-content: space-around;
         margin-right: 90px;
-        margin-left: 80px;
+        margin-left: 45px;
     }
 
     /*Section hebergements*/
@@ -944,6 +1009,11 @@ footer li
         width: 90%;
         padding-left: 5%;
         padding-right: 5%;
+    }
+
+    .activites figure
+    {
+        margin-bottom: 20px;
     }
 
     .result_activites
@@ -986,38 +1056,36 @@ footer li
 }
 
 /*Deuxieme version intermédiaire*/
-@media (min-width: 1161px) and (max-width: 1515px)
+@media (min-width: 1161px) and (max-width: 1439px)
 {
-    .bloc_page
-    {
-        margin: 0;
-        width: auto;
-    }
-
     /*Section hebergements*/
     .hebergements
     {
-        width: 100%;
+        width: 90%;
     }
     
     .hebergements a
     {
-        height: 250px;
-        width: 200px;
+        height: 200px;
+        width: 150px;
         margin: 15px;
     }
     
     .hebergements img
     {
-        height: 180px;
+        height: 130px;
     }
 
     /*Section activites*/
     .activites
     {
         width: 90%;
-        padding-left: 5%;
-        padding-right: 5%;
+
+    }
+
+    .activites figure
+    {
+        margin-bottom: 20px;
     }
 
     .result_activites
@@ -1049,5 +1117,57 @@ footer li
     .iles figure
     {
         height: 250px;
+    }
+
+    /*Footer*/
+    footer ul
+    {
+        flex-wrap: wrap;
+        padding-right: 100px;
+    }
+}
+
+/*Deuxieme version intermédiaire*/
+@media (min-width: 1440px) and (max-width: 1515px)
+{
+    /*Section hebergements*/
+    .hebergements
+    {
+        width: 90%;
+    }
+
+    #hebergements
+    {
+        align-items: center;
+    }
+    
+    .hebergements a
+    {
+        height: 200px;
+        width: 250px;
+        margin: 10px;
+    }
+        
+    .hebergements img
+    {
+        height: 130px;
+    }
+
+    /*Section Activités*/
+    .double_activites figure
+    {
+        height: 220px;
+        width: 300px;
+    }
+
+    .fort figure
+    {
+        height: 275px;
+        margin-right: 50px;
+    }
+
+    .iles figure
+    {
+        height: 165px;
     }
 }
